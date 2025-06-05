@@ -2187,6 +2187,7 @@ width:94%;
   display: flex;
   margin-bottom: 24px;
   width: 100%;
+  padding-right: 20px;
 }
 
 .subscribe-form input {
