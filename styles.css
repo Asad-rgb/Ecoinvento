@@ -2186,7 +2186,7 @@ width:94%;
 .subscribe-form {
   display: flex;
   margin-bottom: 24px;
-  width: 97%;
+  width: 100%;
 }
 
 .subscribe-form input {
