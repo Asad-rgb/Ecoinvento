@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions | [Your Company]</title>
+    <style>
+        :root {
+            --primary-color:#5f259f;
+            --secondary-color:#5f259f;
+            --text-color: #ecf0f1;
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --border-color: #333;
+            --light-gray: #2d2d2d;
+            --white: #ffffff;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        header {
+            background-color: var(--card-bg);
+            color: var(--white);
+            padding: 2rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .back-button {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s;
+        }
+
+        .back-button:hover {
+            color: var(--secondary-color);
+        }
+
+        .back-icon {
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .last-updated {
+            font-style: italic;
+            opacity: 0.8;
+            color: #bdc3c7;
+        }
+
+        .terms-content {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin: 1.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--light-gray);
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            margin: 1.2rem 0 0.8rem;
+        }
+
+        p, ul, ol {
+            margin-bottom: 1rem;
+            color: #d5dbdb;
+        }
+
+        ul, ol {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: #d5dbdb;
+        }
+
+        address {
+            font-style: normal;
+            color: #d5dbdb;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: var(--box-shadow);
+            opacity: 0;
+            transition: all 0.3s;
+            z-index: 99;
+            border: none;
+            outline: none;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        footer {
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+                padding: 0 40px;
+            }
+            
+            .terms-content {
+                padding: 1.5rem;
+            }
+
+            .back-button {
+                font-size: 1rem;
+                left: 10px;
+            }
+
+            .back-icon {
+                font-size: 1rem;
+                position: relative;
+                bottom: 23px;
+                padding-left: 11px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="back-button" title="Back to Home">
+                <span class="back-icon"><i class="fas fa-arrow-left"></i></span>
+                <span class="back-text"></span>
+            </a>
+            <h1>Terms and Conditions</h1>
+            <p class="last-updated">Last Updated: <span id="update-date">June 1, 2023</span></p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="terms-content">
+            <section id="introduction">
+                <h2>1. Introduction</h2>
+                <p>Welcome to <strong>Ecoinvento</strong> ("we," "us," or "our"). These Terms and Conditions ("Terms") govern your use of our website located at <strong>[Your Website URL]</strong> and any related services provided by Ecoinvento.</p>
+                <p>By accessing or using our website, you agree to be bound by these Terms. If you disagree with any part of the terms, you may not access the website.</p>
+            </section>
+
+            <section id="use-of-service">
+                <h2>2. Use of Service</h2>
+                <p>Our website and services are intended for users who are at least <strong>13/16/18</strong> years of age. By using the website, you represent that you meet this age requirement.</p>
+                <p>You agree not to:</p>
+                <ul>
+                    <li>Use the website in any way that violates any applicable laws or regulations</li>
+                    <li>Engage in any fraudulent, abusive, or otherwise illegal activity</li>
+                    <li>Attempt to gain unauthorized access to our systems or interfere with the website's security</li>
+                    <li>Use the website to distribute spam or malicious software</li>
+                    <li>Copy, modify, or create derivative works of the website or its content</li>
+                </ul>
+            </section>
+
+            <section id="intellectual-property">
+                <h2>3. Intellectual Property</h2>
+                <p>The website and its original content, features, and functionality are owned by <strong>Ecoinvento</strong> and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.</p>
+                <p>You may not reproduce, distribute, modify, create derivative works of, publicly display, or otherwise exploit any of the materials on our website without our prior written permission.</p>
+            </section>
+
+            <section id="user-accounts">
+                <h2>4. User Accounts</h2>
+                <p>When you create an account with us, you must provide accurate and complete information. You are solely responsible for:</p>
+                <ul>
+                    <li>Maintaining the confidentiality of your account and password</li>
+                    <li>All activities that occur under your account</li>
+                    <li>Immediately notifying us of any unauthorized use of your account</li>
+                </ul>
+                <p>We reserve the right to refuse service, terminate accounts, or remove/edit content at our sole discretion.</p>
+            </section>
+
+            <section id="purchases">
+                <h2>5. Purchases and Payments</h2>
+                <p>If you wish to purchase any product or service made available through the website ("Purchase"), you may be asked to supply certain information relevant to your Purchase including, without limitation, your credit card number, the expiration date of your credit card, and your billing address.</p>
+                <p>You represent and warrant that: (i) you have the legal right to use any credit card(s) or other payment method(s) in connection with any Purchase; and (ii) the information you supply to us is true, correct and complete.</p>
+                <p>All purchases are subject to our refund policy which can be found at <strong>[Your Refund Policy URL]</strong>.</p>
+            </section>
+
+            <section id="limitation-liability">
+                <h2>6. Limitation of Liability</h2>
+                <p>In no event shall <strong>Ecoinvento</strong>, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from:</p>
+                <ul>
+                    <li>Your access to or use of or inability to access or use the website</li>
+                    <li>Any conduct or content of any third party on the website</li>
+                    <li>Any content obtained from the website</li>
+                    <li>Unauthorized access, use or alteration of your transmissions or content</li>
+                </ul>
+            </section>
+
+            <section id="indemnification">
+                <h2>7. Indemnification</h2>
+                <p>You agree to defend, indemnify and hold harmless <strong>Ecoinvento</strong> and its licensee and licensors, and their employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees), resulting from or arising out of:</p>
+                <ol>
+                    <li>Your use and access of the website</li>
+                    <li>A breach of these Terms</li>
+                    <li>Content posted on the website</li>
+                    <li>Your violation of any third-party right, including without limitation any copyright, property, or privacy right</li>
+                </ol>
+            </section>
+
+            <section id="changes">
+                <h2>8. Changes to Terms</h2>
+                <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. We will provide at least <strong>30</strong> days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
+                <p>By continuing to access or use our website after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you must stop using the website.</p>
+            </section>
+
+            <section id="governing-law">
+                <h2>9. Governing Law</h2>
+                <p>These Terms shall be governed and construed in accordance with the laws of <strong>INDIA</strong>, without regard to its conflict of law provisions.</p>
+                <p>Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect.</p>
+            </section>
+
+            <section id="contact">
+                <h2>10. Contact Us</h2>
+                <p>If you have any questions about these Terms, please contact us at:</p>
+                <address>
+                    <strong>Ecoinventor</strong><br>
+                    Pothia chowk, Kishanganj,
+                    Bihar (855117) INDIA
+                    <br>madniasad945@gmail.com
+                    <br>+91 8986542444
+                </address>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Ecoinvento. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Optional: Update last updated date automatically
+        // document.getElementById('update-date').textContent = new Date().toLocaleDateString('en-US', {
+        //     year: 'numeric',
+        //     month: 'long',
+        //     day: 'numeric'
+        // });
+    </script>
+</body>
+</html>
